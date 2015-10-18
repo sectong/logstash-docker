@@ -1,0 +1,6 @@
+logstash:
+  image: sectong/logstash:1.5.4
+  ports:
+    - "5148:1514/udp"
+  volumes:
+    - ./config:/etc/logstash
